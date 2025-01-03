@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">CodeCraft</a>
+
+        <nav>
+            <a href="index.html" class="active"> Home</a>
+            <a href="services.html" >Services</a>
+            <a href="experience.html" >Experience</a>
+            <a href="contact.html" >Contact</a>
+        </nav>
+        <div class="Mobile">
+            <details>
+                <summary><i class="fa fa-bars"></i></summary>
+                <nav>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="./image/codecraft.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>ThuYaKyaw</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I am freelancer</p>
+            <a href="./download/cv.pdf" class="btn" download="cv_of_thuyakyaw ">Download CV</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/thu-ya-kyaw-5a606732b?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Filip2k03"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+            <button id="contactButton" class="btn">Hire me</button>
+        </div>
+    </section>
+        
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function() {
+          // Determine the desired contact method (e.g., based on user input)
+          let contactMethod = 'email' || 'phone'
+      
+          if (contactMethod === 'email') {
+            window.location.href = "mailto:stephanfilip7@gmail.com";
+          } else {
+            window.location.href = "tel:+9954480806";
+          }
+        });
+      </script>
+</body>
+</html>

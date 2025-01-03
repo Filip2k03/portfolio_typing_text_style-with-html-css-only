@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">CodeCraft</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="Mobile">
+            <details>
+                <summary><i class="fa fa-bars"></i></summary>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Contact<span> Us</span></h1>
+            <h3 class="typing-text-1">For <span></span></h3>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="mailto:stephanfilip7@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="contact-buttons">
+            <a href="tel:+959954480806" class="btn"><i class="fa fa-phone"></i> Call Us</a>
+            <a href="mailto:stephanfilip7@gmail.com" class="btn"><i class="fa fa-envelope"></i> Email Us</a>
+        </div>
+    </section>
+</body>
+</html>
