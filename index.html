@@ -40,6 +40,20 @@
     });
   }
 </script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('consent', 'default', {
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500,
+  });
+  gtag('js', new Date());
+  gtag('config', 'Google tag ID');  <!-- ❌ Remove this part (Already Defined in <head>) -->
+</script>
+
 
 </head>
 <body>
@@ -99,17 +113,6 @@
         
     <script>
     
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('consent', 'default', {
-    'ad_user_data': 'denied',
-    'ad_personalization': 'denied',
-    'ad_storage': 'denied',
-    'analytics_storage': 'denied',
-    'wait_for_update': 500,
-  });
-  gtag('js', new Date());
-  gtag('config', 'Google tag ID');
   document.getElementById('contactButton').addEventListener('click', function() {
     let contactMethod = 'email'; // Change to 'phone' if needed
 
