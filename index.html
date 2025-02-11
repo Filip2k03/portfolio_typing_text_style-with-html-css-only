@@ -10,26 +10,37 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5465760944511712"
     crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SSRKSRDRD"></script>
-    <script>
+    <!-- Google Analytics (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4SSRKSRDRD"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
+  
   function gtag(){dataLayer.push(arguments);}
+  
   gtag('js', new Date());
 
+  // ✅ Corrected: Use your actual Google Analytics ID here
   gtag('config', 'G-4SSRKSRDRD');
 
-  
-    function allConsentGranted() {
-      gtag('consent', 'update', {
-        'ad_user_data': 'granted',
-        'ad_personalization': 'granted',
-        'ad_storage': 'granted',
-        'analytics_storage': 'granted'
-      });
-    }
-    
-   
+  // ✅ Add Consent Mode Configuration
+  gtag('consent', 'default', {
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+
+  function allConsentGranted() {
+    gtag('consent', 'update', {
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted',
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted'
+    });
+  }
 </script>
+
 </head>
 <body>
     <button onclick="allConsentGranted()">Yes</button>
@@ -99,16 +110,16 @@
   });
   gtag('js', new Date());
   gtag('config', 'Google tag ID');
-        document.getElementById('contactButton').addEventListener('click', function() {
-          // Determine the desired contact method (e.g., based on user input)
-          let contactMethod = 'email' || 'phone'
-      
-          if (contactMethod === 'email') {
-            window.location.href = "mailto:stephanfilip7@gmail.com";
-          } else {
-            window.location.href = "tel:+9954480806";
-          }
-        });
+  document.getElementById('contactButton').addEventListener('click', function() {
+    let contactMethod = 'email'; // Change to 'phone' if needed
+
+    if (contactMethod === 'email') {
+        window.location.href = "mailto:stephanfilip7@gmail.com";
+    } else {
+        window.location.href = "tel:+9954480806";
+    }
+});
+
       </script>
 </body>
 </html>
