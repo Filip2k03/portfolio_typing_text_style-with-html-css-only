@@ -26,4 +26,9 @@
   }
 
 
- 
+  function allConsentGranted() {
+    document.getElementById('consentBanner').style.display = 'none';
+  }
+  function hideConsent() {
+    document.getElementById('consentBanner').style.display = 'blocked';
+  }
