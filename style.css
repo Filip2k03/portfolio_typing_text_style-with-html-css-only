@@ -654,5 +654,37 @@ span{
     height: auto;
     max-width: 120px;
   }
+
+  /* AdSense Styles */
+.ad-section {
+    margin: 4rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+  }
+  
+  .mobile-ad {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #161616;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+    .mobile-ad {
+      display: block;
+    }
+    .ad-sidebar {
+      display: none;
+    }
+  }
+  
+  .adsbygoogle {
+    margin: 2rem auto;
+    border-radius: 8px;
+    overflow: hidden;
+  }
   
 
