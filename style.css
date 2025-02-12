@@ -625,4 +625,34 @@ span{
     margin-bottom: 1rem;
   }
   
+  /* Affiliate Section */
+.affiliate-section {
+    padding: 4rem 9%;
+    text-align: center;
+  }
+  
+  .affiliate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .affiliate-card {
+    background: #161616;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .affiliate-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .affiliate-card img {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+  }
+  
 
