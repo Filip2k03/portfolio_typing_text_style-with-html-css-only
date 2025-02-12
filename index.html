@@ -64,20 +64,7 @@
 </head>
 
 <body>
-  <!-- Right sidebar ad -->
-  <aside class="fixed right-0 top-1/2 transform -translate-y-1/2 w-32 h-64 mr-4 z-10">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5465760944511712"
-     crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-5465760944511712"
-        data-ad-slot="8238397335"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </aside>
+  
   <button onclick="allConsentGranted()">Yes</button>
   <header>
     <a href="index.html" class="logo">CodeCraft</a>
@@ -124,6 +111,16 @@
   <footer>
     <p>&copy; 2025 ThuYaKyaw. All Rights Reserved</p>
   </footer>
+  <!-- Sticky Sidebar Ad -->
+<aside class="ad-sidebar">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-5465760944511712"
+       data-ad-slot="8238397335"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+</aside>
+  <!-- Google AdSense -->
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5465760944511712"
     crossorigin="anonymous"></script>
   ads 2 -->
@@ -149,6 +146,30 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4TGH7ST" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SSRKSRDRD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-4SSRKSRDRD');
+    </script>
+    <div class="consent-banner" id="consentBanner">
+      <div class="consent-content">
+        <p>We use cookies to personalize content and ads. <a href="/privacy">Learn more</a></p>
+        <div class="consent-buttons">
+          <button onclick="allConsentGranted()" class="btn consent-accept">Accept All</button>
+          <button onclick="hideConsent()" class="btn consent-reject">Reject</button>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function hideConsent() {
+        document.getElementById('consentBanner').style.display = 'none';
+      }
+    </script>
+    
 </body>
 
 </html>

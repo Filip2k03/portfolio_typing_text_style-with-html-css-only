@@ -558,6 +558,41 @@ span{
     color: #666;
 }
 
-/* ...existing code... */
+
+/* Consent Banner */
+.consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.9);
+    padding: 1rem;
+    z-index: 1000;
+    border-top: 1px solid #007BA7;
+  }
+  
+  .consent-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .consent-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .consent-accept {
+    background: #007BA7 !important;
+    color: white !important;
+  }
+  
+  .consent-reject {
+    background: transparent !important;
+    border: 1px solid #666 !important;
+  }
+  
 
 
